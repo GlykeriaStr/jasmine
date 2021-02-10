@@ -1,34 +1,26 @@
 'use strict';
 
-describe('Plane', function(){
+describe('Plane',function(){
+
   var plane;
+  var airport;
+
   beforeEach(function(){
     plane = new Plane();
-<<<<<<< HEAD
-    airport = jasmine.createSpyObj('airport', ['clearForLanding', 'clearForTakeoff']);
-=======
->>>>>>> parent of 3a1d9fb... clear for landing and created spy objects
+    airport = jasmine.createSpyObj('airport',['clearForLanding','clearForTakeOff']);
   });
 
   it('can land at an airport', function(){
-    expect(plane.land).not.toBeUndefined()
-  });
-<<<<<<< HEAD
-
-  it('lands a plane at an aiport', function() {
-    plane.land(airport)
+    plane.land(airport);
     expect(airport.clearForLanding).toHaveBeenCalledWith(plane);
   });
-
-  it('a plane takes off from airport', function(){
-    plane.land(airport)
+  
+  it('can takeoff from an airport', function(){
+    plane.land(airport);
     plane.takeoff();
-    expect(airport.clearForTakeoff).toHaveBeenCalledWith();
+    expect(airport.clearForTakeOff).toHaveBeenCalled();
   });
-=======
->>>>>>> parent of 3a1d9fb... clear for landing and created spy objects
 });
-
 
 // describe("Plane", function(){
 //   var plane;

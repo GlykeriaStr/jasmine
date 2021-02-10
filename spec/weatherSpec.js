@@ -1,6 +1,5 @@
 'use strict';
 
-
 describe("Weather", function(){
   var weather;
 
@@ -13,7 +12,7 @@ describe("Weather", function(){
     expect(weather.isStormy()).toBeTruthy();
   });
 
-  it('gives not sotrmy other times', function(){
+  it('gives not stormy other times', function(){
     spyOn(Math, 'random').and.returnValue(0);
     expect(weather.isStormy()).toBeFalsy();
   });
