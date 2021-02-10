@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 'use strict';
 
 class Airport {
@@ -24,6 +25,8 @@ class Airport {
 
 
 };
+=======
+>>>>>>> parent of 3a1d9fb... clear for landing and created spy objects
 // class Airport {
 //   constructor(planes) {
 //     this.planes = [];

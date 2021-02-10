@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 'use strict' ;
 
 class Plane {
@@ -14,6 +15,8 @@ class Plane {
   };
 };
 
+=======
+>>>>>>> parent of 3a1d9fb... clear for landing and created spy objects
 // class Plane {
 //   working() {
 //     return true;

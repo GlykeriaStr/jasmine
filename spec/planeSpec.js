@@ -1,16 +1,19 @@
 'use strict';
 
 describe('Plane', function(){
-  var plane, airport;
-
+  var plane;
   beforeEach(function(){
     plane = new Plane();
+<<<<<<< HEAD
     airport = jasmine.createSpyObj('airport', ['clearForLanding', 'clearForTakeoff']);
+=======
+>>>>>>> parent of 3a1d9fb... clear for landing and created spy objects
   });
 
   it('can land at an airport', function(){
     expect(plane.land).not.toBeUndefined()
   });
+<<<<<<< HEAD
 
   it('lands a plane at an aiport', function() {
     plane.land(airport)
@@ -22,6 +25,8 @@ describe('Plane', function(){
     plane.takeoff();
     expect(airport.clearForTakeoff).toHaveBeenCalledWith();
   });
+=======
+>>>>>>> parent of 3a1d9fb... clear for landing and created spy objects
 });
 
 
