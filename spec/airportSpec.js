@@ -14,6 +14,13 @@ describe('Airport', function() {
     expect(airport.planes()).toEqual([]);
   });
 
+  describe('#name', function() {
+    it('has a name', function() {
+      spyOn(Math, 'random').and.returnValue(0);
+      expect(airport.name()).toEqual('Heathrow');
+    });
+  });
+
   describe('#capacity', function() {
     it('has a default capacity', function() {
       expect(airport.ShowCapacity()).toEqual(20);
@@ -61,34 +68,3 @@ describe('Airport', function() {
       });
     });
 });
-
-
-// describe("airport", function() {
-//   var airport, plane, planes;
-//
-//   // let plane: plane;
-//
-//   beforeEach(function() {
-//     airport = new Airport(planes);
-//   });
-//
-//
-//   it("can land a plane", function() {
-//     airport.land(plane)
-//     expect(airport.planes).toContain(plane);
-//   });
-//
-//   it("can take off", function() {
-//     airport.land(plane)
-//     airport.takeoff(plane)
-//     expect(airport.planes.length).toBe(0);
-//   });
-//
-//
-//   // it("a land method", function() {
-//   //   spyOn(airport, 'land');
-//   //   airport.land(plane);
-//   //
-//   //   expect(airport.land).toHaveBeenCalledWith(plane);
-//   // });
-// });

@@ -11,6 +11,20 @@ class Airport{
     return this._capacity;
   }
 
+  name(){
+    var names = ['Heathrow', 'Gatwick', 'JFK'];
+    var name = names[Math.floor(Math.random() * 3)];
+    return name;
+  }
+
+  ShowWeather(){
+    if(this._weather.isStormy() === false){
+      return 'good';
+    }else {
+      return 'stormy';
+    }
+  }
+
   planes() {
     return this._hangar;
   }

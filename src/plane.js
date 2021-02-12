@@ -12,8 +12,3 @@ class Plane {
       this._location.clearForTakeOff(this)
     }
 };
-// class Plane {
-//   working() {
-//     return true;
-//   }
-// }
